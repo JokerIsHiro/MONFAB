@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js" defer></script>
+    <title>Form MONFAB</title>
+</head>
+<body>
+    <div>
+        <form id="form" action="ws/createElement.php" method="post">
+            <fieldset>
+                <legend>Rellenar Datos</legend>
+                <div>
+                    <label for="fullname">Nombre:</label>
+                    <input type="text" id="fullname" name="fullname">
+                </div>
+
+                <div>
+                    <label for="desc">Descripcion:</label>
+                    <input type="text" id="desc" name="desc">
+                </div>
+
+                <div>
+                    <label for="serial">Numero de Serie:</label>
+                    <input type="number" id="serial" name="serial">
+                </div>
+
+                <div>
+                    <label for="status">Estado:</label><br>
+                    <input type="hidden" name="status" value="off">
+                    <input type="checkbox" id="status" name="status" value="on">
+                    <label for="status">Estado</label>
+                </div>
+                
+                <div id="btngroup">
+                    <label for="priority">Prioridad</label><br>
+                    <input type="radio" name="prio" value="high">
+                    <label for="high_prio">Alta</label>
+                    <input type="radio" name="prio" value="medium">
+                    <label for="medium_prio">Media</label>
+                    <input type="radio" name="prio" value="low">
+                    <label for="low_prio">Baja</label>
+                </div>
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+        <div>
+            <ul>
+                <li>
+                    <a href="link.html">
+                        <button>Ir a Enlaces</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="table.html">
+                        <button>Ir a Tabla</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="detail.html">
+                        <button>Ir a Detalle</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="login.html">
+                        <button>Ir a Inicio de Sesion</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
