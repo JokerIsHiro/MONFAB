@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/script.js" defer></script>
+    <script src="js/nav.js" defer></script>
     <title>Table MONFAB</title>
 </head>
 
 <body>
+    <div id="nav-container">
+    </div>
     <div>
         <input type="search" name="filter" id="filter" placeholder="Filtrar">
         <table border="2">
@@ -27,28 +30,24 @@
             </tbody>
         </table>
     </div>
-    <ul>
-        <li>
-            <a href="form.html">
-                <button>Ir a Formulario</button>
-            </a>
-        </li>
-        <li>
-            <a href="link.html">
-                <button>Ir a Enlaces</button>
-            </a>
-        </li>
-        <li>
-            <a href="detail.html">
-                <button>Ir a Detalle</button>
-            </a>
-        </li>
-        <li>
-            <a href="login.html">
-                <button>Ir a Inicio de Sesion</button>
-            </a>
-        </li>
-    </ul>
+
+    <dialog id="editDialog">
+        <form method="post" id="form">
+            <label for="fullname">Fullname</label>
+            <input type="text" id="fullname" name="fullname"><br>
+            <label for="desc">Desc</label>
+            <input type="text" id="desc" name="desc"><br>
+            <label for="serial">Serial</label>
+            <input type="text" id="serial" name="serial"><br>
+            <label for="status">Status</label>
+            <input type="checkbox" name="status" id="status"></label><br>
+            <label for="prio">Prio</label><br>
+            <input type="radio" name="prio" id="prioHigh" value="high"> Alta</label><br>
+            <input type="radio" name="prio" id="prioMedium" value="medium"> Media</label><br>
+            <input type="radio" name="prio" id="prioLow" value="low"> Baja</label><br>
+            <button type="submit">Save</button>
+        </form>
+    </dialog>
 </body>
 
 </html>
