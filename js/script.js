@@ -9,7 +9,7 @@ const data = [
 
 const tbody = document.querySelector('#body');
 const input = document.querySelector('#filter');
-const dialog = document.querySelector('#editDialog')
+const dialog = document.querySelector('#editDialog');
 const form = document.querySelector('#form');
 
 populateTable();
