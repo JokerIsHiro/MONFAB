@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             navItems.forEach(item => {
                 const linkItem = item.querySelector("a").getAttribute("href");
-                if(linkItem === currentPage){
+                if (linkItem === currentPage) {
                     item.classList.add('active');
                 }
                 item.addEventListener('click', function () {
@@ -19,4 +19,4 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
             });
         });
-});
+});     
